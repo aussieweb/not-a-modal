@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Not-A-Modal - Kinda, sorta, not really modals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- HTML5 Shim for IE -->
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+	<section style="margin-bottom: 51px;">
+	    <article class="container">
+	        <h1><i class="icon-logo"></i> Not-A-Modal</h1>
+	        <p class="text-big text-center">Kinda, sorta, not really modals.</p>
+
+	        <div class="row text-center">
+	            <div class="grid-4 offset-1">
+            	        <p>For when a modal won't due but you need to show lots of content on top of existing content...</p>
+        	        </div>
+	        </div>
+
+	        <p class="text-center"><a class="btn btn-blue" href="https://github.com/cferdinandi/not-a-modal"><i class="icon-github"></i> Download on GitHub</a></p>
+
+	        <p class="text-small text-muted text-center">Or keep reading to learn more...</p>
+
+	        <hr>
+
+	        <h2>How it Works</h2>
+
+	        <p>You can use links or buttons to toggle not-a-modals.</p>
+
+	        <p class="text-small">Just add the <code>.modal</code> class and a <code>data-target</code> that matches the ID of element you'd like to toggle. Modal content should be wrapped in a <code>&lt;div&gt;</code> with the <code>.modal-menu</code> class.</p>
+
+            <p>
+                <a class="modal" data-target="#modal1" href="#">Launch Modal 1</a> 
+                <button class="btn btn-small modal" data-target="#modal2">Launch Modal 2</button>
+            </p>
+
+            <div class="modal-menu" id="modal1">
+                <div class="container">
+                    <h2>Some Title <a class="close modal-close" href="#">×</a></h2>
+                    <p>Some content...</p>
+                    <button class="btn btn-small modal-close">Close</button>
+                </div>
+            </div>
+
+            <div class="modal-menu" id="modal2">
+                <div class="container">
+                    <h2>Some Other Title <a class="close modal-close" href="#">×</a></h2>
+                    <p>Some other content...</p>
+                    <button class="btn btn-small modal-close">Close</button>
+                </div>
+            </div>
+
+            <pre>&lt;a class="modal" data-target="#modal1" href="#"&gt;Launch Modal 1&lt;/a&gt;
+
+&lt;div class="modal-menu" id="modal1"&gt;
+    &lt;div class="container"&gt;
+        &lt;h2&gt;Some Title &lt;a class="close modal-close" href="#"&gt;×&lt;/a&gt;&lt;/h2&gt;
+        &lt;p&gt;Some content...&lt;/p&gt;
+        &lt;button class="btn btn-small modal-close"&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+            <hr>
+
+
+            <h2>Don't Forget Fallbacks</h2>
+
+            <p class="text-small">Because Not-A-Modal is powered by JavaScript, it should only be used for non-essential content (<em>if there is such a thing</em>), or content that can be accessed in an alternate way.</p>
+
+            <p class="text-small">When active, the default link behavior is turned off. You should probably include an <code>href</code> value as a fallback for when JavaScript is not enabled.</p>
+
+            <p class="text-small">See this in action at <a href="http://www.pawsnewengland.com/our-dogs/">PAWS New England</a>.</p>
+
+            <hr>
+
+
+            <h2>Requires jQuery</h2>
+
+            <p>Not-A-Modal requires <a href="http://jquery.com/">jQuery</a>.</p>
+
+            <p class="text-small">Obviously, you need to include not-a-modal.js, too.</p>
+
+            <pre>&lt;script src="http://code.jquery.com/jquery-1.9.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="not-a-modal.js"&gt;&lt;/script&gt;</pre>
+
+        </article>
+	</section>
+
+	<footer class="bg-gray">
+        <article class="container">
+
+            <p class="text-small text-muted text-center">Built by <a href="http://gomakethings.com">Chris Ferdinandi</a>. Licensed under <a href="http://www.wtfpl.net/">WTFPL</a>.</p>
+
+        </article>
+	</footer>
+
+
+    <!-- Javascript -->
+    <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+    <script type='text/javascript' src='scripts.js'></script>
+
+</body>
+</html>
