@@ -501,6 +501,7 @@ button, .btn {
     text-rendering: optimizeLegibility; 
 }
 
+.icon-logo:before { content: "\e000"; }
 .icon-github:before { content: "\e001"; }
 
 
