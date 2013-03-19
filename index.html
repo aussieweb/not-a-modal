@@ -5,39 +5,56 @@
     <title>Not-A-Modal - Kinda, sorta, not really modals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <!-- stylesheets -->
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="kraken.css" type="text/css" />
 
-    <!-- HTML5 Shim for IE -->
-    <!--[if IE]>
+    <!-- HTML5 Shim for IE 6-8 -->
+    <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
+
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144.png">
+
+    <!-- MS Homescreen Icons -->
+    <meta name="msapplication-TileColor" content="#0088cc">
+    <meta name="msapplication-TileImage" content="img/ms-touch-icon.png">
 </head>
 
 <body>
-	<section style="margin-bottom: 51px;">
-	    <article class="container">
-	        <h1><i class="icon-logo"></i> Not-A-Modal</h1>
-	        <p class="text-big text-center">Kinda, sorta, not really modals.</p>
+	<section class="space-bottom bg-gray">
+	    <article class="container text-center">
 
-	        <div class="row text-center">
+	        <div class="row">
 	            <div class="grid-4 offset-1">
-            	        <p>For when a modal won't due but you need to show lots of content on top of existing content...</p>
+	                <h1 class="text-taller no-space-bottom"><i class="icon-logo"></i> Not-A-Modal</h1>
+	                <p class="text-tall text-muted">Kinda, sorta, not really modals.</p>
         	        </div>
 	        </div>
 
-	        <p class="text-center"><a class="btn btn-blue" href="https://github.com/cferdinandi/not-a-modal"><i class="icon-github"></i> Download on GitHub</a></p>
+	        <p><a class="btn btn-blue btn-large" href="#"><i class="icon-github"></i> Download on GitHub</a></p>
 
-	        <p class="text-small text-muted text-center">Or keep reading to learn more...</p>
+	        <p class="text-muted">Or keep reading to learn more...</p>
 
-	        <hr>
+        </article>
+    </section>
 
-	        <h2>How it Works</h2>
+	<section class="space-bottom">
+	    <article class="container">
+
+
+	        <h1 class="text-center">How It Works</h1>
 
 	        <p>You can use links or buttons to toggle not-a-modals.</p>
 
-	        <p class="text-small">Just add the <code>.modal</code> class and a <code>data-target</code> that matches the ID of element you'd like to toggle. Modal content should be wrapped in a <code>&lt;div&gt;</code> with the <code>.modal-menu</code> class.</p>
+	        <p>Just add the <code>.modal</code> class and a <code>data-target</code> that matches the ID of element you'd like to toggle. Modal content should be wrapped in a <code>&lt;div&gt;</code> with the <code>.modal-menu</code> class.</p>
 
-	        <p class="text-small">Modal content will span the full width of the container. Use a grid system like <a href="http://cferdinandi.github.com/kraken/">Kraken</a> to structure content in the modal.</p>
+	        <p>Modal content will span the full width of the container. Use a grid system like <a href="http://cferdinandi.github.com/kraken/">Kraken</a> to structure content in the modal.</p>
 
             <p>
                 <a class="modal" data-target="#modal1" href="#">Launch Modal 1</a> 
@@ -71,25 +88,20 @@
             <hr>
 
 
-            <h2>Don't Forget Fallbacks</h2>
+	        <h1 class="text-center">Don't Forget Fallbacks</h1>
 
-            <p class="text-small">Because Not-A-Modal is powered by JavaScript, it should only be used for non-essential content (<em>if there is such a thing</em>), or content that can be accessed in an alternate way.</p>
+            <p>Because Not-A-Modal is powered by JavaScript, it should only be used for non-essential content (<em>if there is such a thing</em>), or content that can be accessed in an alternate way.</p>
 
-            <p class="text-small">When active, the default link behavior is turned off. You should probably include an <code>href</code> value as a fallback for when JavaScript is not enabled.</p>
+            <p>When active, the default link behavior is turned off. You should probably include an <code>href</code> value as a fallback for when JavaScript is not enabled.</p>
 
-            <p class="text-small">See this in action at <a href="http://www.pawsnewengland.com/our-dogs/">PAWS New England</a>.</p>
+            <p>See this in action at <a href="http://www.pawsnewengland.com/our-dogs/">PAWS New England</a>.</p>
 
             <hr>
 
 
-            <h2>Requires jQuery</h2>
+            <h1 class="text-center">Requires jQuery</h1>
 
             <p>Not-A-Modal requires <a href="http://jquery.com/">jQuery</a>.</p>
-
-            <p class="text-small">Obviously, you need to include not-a-modal.js, too.</p>
-
-            <pre>&lt;script src="http://code.jquery.com/jquery-1.9.0.min.js"&gt;&lt;/script&gt;
-&lt;script src="not-a-modal.js"&gt;&lt;/script&gt;</pre>
 
         </article>
 	</section>
@@ -105,7 +117,7 @@
 
     <!-- Javascript -->
     <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
-    <script type='text/javascript' src='scripts.js'></script>
+    <script type='text/javascript' src='js/kraken.js'></script>
 
 </body>
 </html>
