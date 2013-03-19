@@ -643,7 +643,6 @@ select:focus {
 
 
 /*  ICONS */
-/*  A placeholder for icon fonts. */
 
 @font-face { 
     font-family: 'icomoon'; 
@@ -724,18 +723,6 @@ select:focus {
     background-color: #f4f4f4;
     padding-top: 1.529411765em;
     padding-bottom: 1.529411765em;
-}
-
-.hero {
-    background-color: #e5e5e5;
-    padding: .470588235em;
-    margin-bottom: 1.529411765em;
-    border-radius: .235294118em;
-}
-
-.hero-dark {
-    background-color: #b8b8b8;
-    margin-bottom: 0;
 }
 
 
