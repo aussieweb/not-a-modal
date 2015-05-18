@@ -1,4 +1,4 @@
-# Not-A-Modal
+# [DEPRECATED] Not-A-Modal
 Kinda, sorta, not really modals.
 
 When a modal won't due but you need to show lots of content over existing content... Not-A-Modal.
@@ -11,4 +11,5 @@ Getting started with Not-A-Modal is really easy. [View the online tutorial](http
   * Initial release.
 
 ## License
-Not-A-Modal is licensed under [WTFPL](http://www.wtfpl.net/).
+
+The code is available under the [MIT License](LICENSE.md).
